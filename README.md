@@ -2,8 +2,9 @@
 
 In this project, I made an attempt to write some Kotlin handling partial json responses.
 
-Imagine you want a users name from an endpoint, because you want to render a greeting message.
-What if you didn't have to wait for the whole json to be transmitted back, but the server gave you whatever fields were easy to calculate first.
+Imagine you want a user's username from an endpoint in order to render a greeting message.
+What if you didn't have to wait for the whole json to be available before you updated your UI.
+(Most servers give send complete responses though - but implementing some kind of protocol for sending quick data first could be done)
 
 ```json
 {
